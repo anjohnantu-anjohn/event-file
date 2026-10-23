@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- fontawesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Edu+QLD+Hand:wght@400..700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        *{
+             font-family: "Roboto Condensed", sans-serif;
+        }
+    </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+<header class="bg-white-50 flex flex-col md:flex-row md:justify-between md:items-center p-3 gap-3">
+   <div class="flex items-center justify-center md:justify-start">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.fN0NISc9a51VaR8vY96XrgHaGC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-10 h-10 object-contain" alt="Evenora logo" >
+
+    <h1 class="text-fuchsia-900 text-2xl px-3 font-semibold" >Evenora </h1>
+   </div>
+
+   <ul class="flex flex-wrap justify-center gap-3 md:gap-5 ">
+    <li class=" text-fuchsia-900 hover:text-pink-600"><a href="#Home">Home</a></li>
+    <li class=" text-fuchsia-900 hover:text-pink-600"><a href="#Resgister">Register</a></li>
+    <li class=" text-fuchsia-900 hover:text-pink-600"><a href="#Services">Services</a></li>
+    <li class=" text-fuchsia-900 hover:text-pink-600"><a href="#Contact">Contact</a></li>
+   </ul>
+
+   <div class="flex justify-center">
+   <Button class=" text-fuchsia-900  hover:text-pink-600 px-6 py-2 shadow rounded-full border" >Login </button>
+    </div>
+    
+</header>
+<section id="Home"
+  class="w-full min-h-[500px] md:min-h-[650px] flex items-center bg-cover bg-center"
+  style="background-image: url('https://images.pexels.com/photos/32994494/pexels-photo-32994494.jpeg');">
+
+  <div class="px-5 py-12 sm:px-8 md:px-12 max-w-3xl">
+
+    <p class="text-lg sm:text-xl md:text-2xl text-violet-100 mb-3">
+      Plan • Celebrate • Create Memories
+    </p>
+
+    <h1 class="text-4xl sm:text-5xl md:text-6xl text-purple-50 leading-tight">
+      <span class="text-slate-800 font-bold">Your</span>
+      Perfect Event
+      <br>
+      Our <span class="text-slate-800 font-bold">Expertise!</span>
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl text-white mt-4">
+      Create unforgettable moments with Evenora,
+      where every celebration becomes extraordinary.
+    </p>
+
+    <button class="text-amber-50 text-lg md:text-xl border px-5 py-3 rounded-lg mt-6 bg-slate-800 hover:bg-slate-700">
+      Book Your Event →
+    </button>
+
+  </div>
+</section>
+
+<section class="w-full p-5 sm:p-8 md:p-10">
+
+  <h2 class="text-3xl text-center text-fuchsia-900 font-medium">
+    About Us
+  </h2>
+
+  <p class="text-xl sm:text-2xl text-center text-fuchsia-800 mt-2">
+    Making Every Event Special!
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center my-8">
+
+    <!-- Text -->
+    <div class="w-full md:w-1/2">
+      <h3 class="text-center text-2xl text-fuchsia-900 font-semibold">
+        Evenora
+      </h3>
+
+      <p class="text-justify p-3 text-fuchsia-700 leading-relaxed">
+        We turn your special moments into unforgettable memories!
+        Our Event Management System makes planning and organizing
+        weddings, birthday parties, corporate meetings, and special
+        celebrations simple, seamless, and stress-free.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <img
+        src="https://images.pexels.com/photos/32994472/pexels-photo-32994472.jpeg"
+        alt="An event celebration"
+        class="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg"
+      >
+    </div>
+
+  </div>
+</section>
+
+<!-- event boxes -->
+
+<section class="min-h-screen p-4 md:p-8 bg-fuchsia-50 shadow">
+  <!-- Gallery Heading -->
+  <div class="mb-8">
+    <h1 class="text-3xl md:text-4xl text-center text-fuchsia-900 font-medium p-2">
+      Event Gallery
+    </h1>
+
+    <p class="text-lg md:text-2xl text-center text-fuchsia-800 p-1">
+      Make our special events memorable
+    </p>
+  </div>
+
+  <!-- Responsive Gallery -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+
+    <div class="p-3 rounded-xl bg-white shadow-md hover:shadow-xl transition duration-300"
+         data-aos="fade-right">
+      <img
+        src="https://images.pexels.com/photos/14457434/pexels-photo-14457434.jpeg"
+        alt="Birthday party"
+        class="w-full h-56 object-cover rounded-lg"
+      >
+      <h2 class="text-center mt-4 mb-2 text-xl text-teal-950 font-medium">
+        Birthday Parties
+      </h2>
+    </div>
+
+    <div class="p-3 rounded-xl bg-white shadow-md hover:shadow-xl transition duration-300"
+         data-aos="fade-right">
+      <img
+        src="https://images.pexels.com/photos/35888642/pexels-photo-35888642.jpeg"
+        alt="Photography session"
+        class="w-full h-56 object-cover rounded-lg"
+      >
+      <h2 class="text-center mt-4 mb-2 text-xl text-teal-950 font-medium">
+        Photography Sessions
+      </h2>
+    </div>
+
+    <div class="p-3 rounded-xl bg-white shadow-md hover:shadow-xl transition duration-300"
+         data-aos="flip-down">
+      <img
+        src="https://images.pexels.com/photos/38707960/pexels-photo-38707960.jpeg"
+        alt="Wedding event"
+        class="w-full h-56 object-cover rounded-lg"
+      >
+      <h2 class="text-center mt-4 mb-2 text-xl text-teal-950 font-medium">
+        Weddings
+      </h2>
+    </div>
+
+    <div class="p-3 rounded-xl bg-white shadow-md hover:shadow-xl transition duration-300"
+         data-aos="fade-left">
+      <img
+        src="https://images.pexels.com/photos/6405783/pexels-photo-6405783.jpeg"
+        alt="Corporate event"
+        class="w-full h-56 object-cover rounded-lg"
+      >
+      <h2 class="text-center mt-4 mb-2 text-xl text-teal-950 font-medium">
+        Corporate Events
+      </h2>
+    </div>
+
+    <div class="p-3 rounded-xl bg-white shadow-md hover:shadow-xl transition duration-300"
+         data-aos="fade-left">
+      <img
+        src="https://images.pexels.com/photos/8761547/pexels-photo-8761547.jpeg"
+        alt="Workshop or seminar"
+        class="w-full h-56 object-cover rounded-lg"
+      >
+      <h2 class="text-center mt-4 mb-2 text-xl text-teal-950 font-medium">
+        Workshops &amp; Seminars
+      </h2>
+    </div>
+
+  </div>
+</section>
+
+  <br><br><br>
+
+  <!-- cards -->
+  
+<section class="min-h-screen p-4 md:p-8 bg-fuchsia-50 shadow-md">
+
+  <!-- Heading -->
+  <div class="mb-8">
+    <h1 class="text-3xl md:text-4xl text-center text-fuchsia-900 font-medium p-2">
+      Upcoming Events
+    </h1>
+
+    <p class="text-lg md:text-2xl text-center text-fuchsia-800 p-2">
+      Don't Miss Our Exciting Events.
+    </p>
+
+    <div class="text-center md:text-left mt-2">
+      <button class="text-blue-900 hover:text-gray-800 text-sm underline hover:no-underline">
+        View all events ➞
+      </button>
+    </div>
+  </div>
+
+  <!-- Responsive Event Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+
+    <!-- Birthday Parties -->
+    <div class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-xl transition duration-300">
+      <img
+        src="https://images.pexels.com/photos/27176823/pexels-photo-27176823.jpeg"
+        alt="Birthday parties"
+        class="w-full h-56 object-cover"
+      >
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold text-fuchsia-900 mb-3">
+          Birthday Parties
+        </h2>
+        <p class="text-sm text-olive-950 mb-2">🗓️ 24 May 2026</p>
+        <p class="text-sm text-olive-950">📍 Bengaluru, India</p>
+      </div>
+    </div>
+
+    <!-- Workshop -->
+    <div class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-xl transition duration-300">
+      <img
+        src="https://images.pexels.com/photos/7495486/pexels-photo-7495486.jpeg"
+        alt="Workshop"
+        class="w-full h-56 object-cover"
+      >
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold text-fuchsia-900 mb-3">
+          Workshop
+        </h2>
+        <p class="text-sm text-olive-950 mb-2">🗓️ 09 Nov 2026</p>
+        <p class="text-sm text-olive-950">📍 Chennai, India</p>
+      </div>
+    </div>
+
+    <!-- Wedding Events -->
+    <div class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-xl transition duration-300">
+      <img
+        src="https://images.pexels.com/photos/8815274/pexels-photo-8815274.jpeg"
+        alt="Wedding events"
+        class="w-full h-56 object-cover"
+      >
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold text-fuchsia-900 mb-3">
+          Wedding Events
+        </h2>
+        <p class="text-sm text-olive-950 mb-2">🗓️ 03 Aug 2026</p>
+        <p class="text-sm text-olive-950">📍 Mumbai, India</p>
+      </div>
+    </div>
+
+    <!-- Photography -->
+    <div class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-xl transition duration-300">
+      <img
+        src="https://images.pexels.com/photos/35588265/pexels-photo-35588265.jpeg"
+        alt="Photography event"
+        class="w-full h-56 object-cover"
+      >
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold text-fuchsia-900 mb-3">
+          Photography
+        </h2>
+        <p class="text-sm text-olive-950 mb-2">🗓️ 14 Sep 2026</p>
+        <p class="text-sm text-olive-950">📍 Goa, India</p>
+      </div>
+    </div>
+
+    <!-- Corporate Meet -->
+    <div class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-xl transition duration-300">
+      <img
+        src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg"
+        alt="Corporate meeting"
+        class="w-full h-56 object-cover"
+      >
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold text-fuchsia-900 mb-3">
+          Corporate Meet
+        </h2>
+        <p class="text-sm text-olive-950 mb-2">🗓️ 08 Dec 2026</p>
+        <p class="text-sm text-olive-950">📍 Delhi, India</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <br><br><br>
+
+
+<!-- services -->
+  
+<section class="h-auto p-4 md:p-8 bg-fuchsia-50 shadow-md">
+
+  <!-- Heading -->
+  <div class="text-center mb-8" data-aos="flip-left">
+    <h1 class="text-2xl md:text-3xl text-fuchsia-900 font-medium p-2">
+      ━━━ Our Services ━━━
+    </h1>
+
+    <button class="text-blue-900 hover:text-gray-800 text-sm underline hover:no-underline mt-2">
+      View all services ➞
+    </button>
+  </div>
+
+  <!-- Responsive Services Grid -->
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+
+    <!-- Birthday Party -->
+    <div class="rounded-xl shadow-md bg-white border border-fuchsia-100 p-4 flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition duration-300"
+         data-aos="flip-left">
+      <img
+        src="https://th.bing.com/th/id/OIP.ZpcAlSV-82mhj_UnCx0p0wHaHa?w=207&h=208&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Birthday party planning"
+        class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3"
+      >
+      <h2 class="text-sm md:text-base font-bold text-fuchsia-900 text-center">
+        Birthday Party
+      </h2>
+      <p class="text-sm font-bold text-fuchsia-900 text-center">
+        & Event Planning
+      </p>
+    </div>
+
+    <!-- Photography -->
+    <div class="rounded-xl shadow-md bg-white border border-fuchsia-100 p-4 flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition duration-300"
+         data-aos="flip-left">
+      <img
+        src="https://th.bing.com/th/id/OIP.xv-2-lRl2p4iyJSGUjn7IgHaHa?w=193&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Photography"
+        class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3"
+      >
+      <h2 class="text-sm md:text-base font-bold text-fuchsia-900 text-center">
+        Photography
+      </h2>
+      <p class="text-sm font-bold text-fuchsia-900 text-center">
+        Master Class
+      </p>
+    </div>
+
+    <!-- Wedding Event -->
+    <div class="rounded-xl shadow-md bg-white border border-fuchsia-100 p-4 flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition duration-300"
+         data-aos="flip-left">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/011/538/680/original/line-camera-icon-isolated-on-a-white-background-camera-symbol-for-web-and-mobile-apps-free-vector.jpg"
+        alt="Wedding event management"
+        class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3"
+      >
+      <h2 class="text-sm md:text-base font-bold text-fuchsia-900 text-center">
+        Wedding Event
+      </h2>
+      <p class="text-sm font-bold text-fuchsia-900 text-center">
+        Management
+      </p>
+    </div>
+
+    <!-- Corporate Event -->
+    <div class="rounded-xl shadow-md bg-white border border-fuchsia-100 p-4 flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition duration-300"
+         data-aos="flip-left">
+      <img
+        src="https://tse3.mm.bing.net/th/id/OIP.SSdfXZ9J9q_YpWv5GjIo5gAAAA?r=0&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3"
+        alt="Corporate event management"
+        class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3"
+      >
+      <h2 class="text-sm md:text-base font-bold text-fuchsia-900 text-center">
+        Corporate Event
+      </h2>
+      <p class="text-sm font-bold text-fuchsia-900 text-center">
+        Management
+      </p>
+    </div>
+
+    <!-- Workshops -->
+    <div class="rounded-xl shadow-md bg-white border border-fuchsia-100 p-4 flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition duration-300"
+         data-aos="flip-left">
+      <img
+        src="https://th.bing.com/th/id/OIP.GKyZZrf7ux__RluabmMYWQHaHa?w=199&h=199&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Workshops and seminars"
+        class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3"
+      >
+      <h2 class="text-sm md:text-base font-bold text-fuchsia-900 text-center">
+        Workshops &
+      </h2>
+      <p class="text-sm font-bold text-fuchsia-900 text-center">
+        Seminars
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <br><br>
+  <!-- footer -->
+  <footer class="bg-fuchsia-950 text-white p-5">
+
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <!-- Company Info -->
+
+    <div class="text-center md:text-left">
+
+      <h2 class="text-3xl font-bold text-yellow-500">Evenora</h2>
+
+      <p class="mt-2">Making every event unforgettable.</p>
+       <p>&copy; 2026 Eventify. All rights reserved.</p><br>
+
+    </div>
+
+    <!-- Social Media -->
+
+    <div class="text-center">
+
+      <h3 class="text-yellow-400 mb-2 tracking-wide ">FOLLOW US</h3>
+
+      <div class="flex gap-6">
+
+        <h2 class="hover:text-yellow-400 ">Linked In</h2>
+        <h2 class="hover:text-yellow-400">Instagram</h2>
+        <h2 class="hover:text-yellow-400">Twitter</h2>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Copyright and Links -->
+
+  <div>
+
+    <hr class="text-yellow-300">
+
+    <div class="flex justify-center gap-4 mt-3">
+
+     <h2 class="hover:text-yellow-400">Privacy Policy</h2> 
+
+     <h2 class="hover:text-yellow-400">Terms & Conditions</h2> 
+
+      <h2 class="hover:text-yellow-400">Contact Us</h2> 
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
